@@ -70,7 +70,7 @@ python run_pipeline.py
 
 ## 📊 Soda Cloud
 
-Your data is validated with [Soda Cloud](https://cloud.soda.io), which shows:
+Your data is validated with [Soda Cloud](https://beta.soda.io), which shows:
 - Row counts
 - Missing values
 - Failed thresholds
