@@ -1,0 +1,12 @@
+name: soda310
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - soda-core
+      - soda-core-redshift
+      - pg8000
+      - bs4
+      - pandas      

@@ -1,0 +1,17 @@
+checks for operational_demand:
+  - row_count > 0
+  - missing_count(demand_mw) = 0
+  - failed rows:
+      name: "Demand too low"
+      fail condition: demand_mw < 1000
+  - failed rows:
+      name: "Duplicate rows across all columns"
+      fail query: |
+        SELECT region_id, category, type, aemo_flag, region_code,
+               interval_datetime, demand_mw, demand_adjustment,
+               wdr_estimate, last_changed, COUNT(*) 
+        FROM public.operational_demand
+        GROUP BY region_id, category, type, aemo_flag, region_code,
+                 interval_datetime, demand_mw, demand_adjustment,
+                 wdr_estimate, last_changed
+        HAVING COUNT(*) > 1

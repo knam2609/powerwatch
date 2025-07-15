@@ -1,0 +1,22 @@
+# Core packages
+pandas
+python-dotenv
+
+# AWS SDK
+boto3
+
+# SQLAlchemy and Redshift driver
+sqlalchemy
+sqlalchemy-redshift
+psycopg2-binary
+
+# Soda Core for data quality checks
+soda-core-redshift
+soda-core
+
+# Optional: for CLI usage and file downloading
+requests
+bs4
+
+# Optional: for ZIP handling if downloading compressed files
+zipfile36  # Only needed for older Python versions; otherwise use built-in zipfile

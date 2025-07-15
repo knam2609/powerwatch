@@ -1,0 +1,4 @@
+soda_cloud:
+  host: beta.soda.io
+  api_key_id: ${SODA_API_KEY_ID}
+  api_key_secret: ${SODA_API_KEY_SECRET}

@@ -1,0 +1,9 @@
+data_source powerwatch_redshift:
+  type: redshift
+  connection:
+    host: ${REDSHIFT_HOST}
+    username: ${REDSHIFT_USER}
+    password: ${REDSHIFT_PASSWORD}
+    database: ${REDSHIFT_DB}
+    schema: public
+    port: ${REDSHIFT_PORT}

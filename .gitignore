@@ -1,0 +1,7 @@
+# Ignore configuration files with sensitive data
+.env
+
+# Ignore data files (files only)
+**/*.csv
+
+*.pkg
